@@ -21,12 +21,11 @@
   />
 
   <label for="house-selection">Select a house:</label>
-  <select name="house" id="house-selection">
-    <option value="Gryffindor">Gryffindor</option>
-    <option value="Ravenclaw">Ravenclaw</option>
-    <option value="Hufflepuff">Hufflepuff</option>
+  <select id="house" name="house_id">
+    <% for house in @house %>
+     <option value="<%=house.id%>"> <%= house.name %></option>
+    <%end%>
   </select>
 
-
-  <input type="submit" value="Application">
+  <input type="submit" value="send">
 </form>

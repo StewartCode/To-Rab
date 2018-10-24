@@ -17,6 +17,7 @@ get "/student" do
 end
 
 get "/student/new" do
+  @house = House.all()
   erb(:new)
 end
 
