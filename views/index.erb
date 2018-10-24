@@ -1,0 +1,7 @@
+<% for student in @students %>
+<p>Student name : <%=student.pretty_name%> </p>
+<p>age : <%=student.age%> </p>
+<p>house : <%=student.house.name%> </p>
+
+<p> <a href="/student/<%=student.id%>">Show Details</a></p>
+<%end%>
